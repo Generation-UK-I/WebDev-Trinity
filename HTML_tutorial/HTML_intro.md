@@ -170,3 +170,5 @@ HTML elements can be nested inside each other to build complex structures
   <p><em>The Hobbit</em> by J.R.R. Tolkien</p>
 </div>
 ```
+
+[Click here for an HTML Cheat Sheet for quick reference for a range of tags](HTML_tags_cheatsheet.md)
