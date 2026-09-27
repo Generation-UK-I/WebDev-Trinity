@@ -12,8 +12,8 @@ JavaScript can be implemented into a website in several ways, each suited to dif
 <button onclick="alert('Hello!')">Click Me</button>
 ```
 
-✅ Quick and simple for small tasks  
-❌ Not ideal for maintainability or scalability
+- Quick and simple for small tasks  
+- Not ideal for maintainability or scalability
 
 **2. Internal JavaScript** - (Embedded in your HTML) You can include JavaScript within a `<script>` tag inside the HTML file, usually in the `<head>` or at the end of the `<body>`.
 
@@ -27,8 +27,8 @@ JavaScript can be implemented into a website in several ways, each suited to dif
 </head>
 ```
 
-✅ Keeps everything in one file  
-❌ Can clutter HTML and reduce readability
+- Keeps everything in one file  
+- Can clutter HTML and reduce readability
 
 **3. External JavaScript File** - JavaScript can be placed in a separate .`.js` file and linked to the HTML using the `<script src="...">` tag.
 
@@ -36,14 +36,14 @@ JavaScript can be implemented into a website in several ways, each suited to dif
 <script src="script.js"></script>
 ```
 
-✅ Best for organisation, reusability, and performance  
-✅ Enables caching and easier debugging  
-❌ Requires an extra HTTP request (unless bundled)
+- Best for organisation, reusability, and performance  
+- Enables caching and easier debugging  
+- Requires an extra HTTP request (unless bundled)
 
 **4. JavaScript Frameworks and Libraries** - Modern web development often uses frameworks like **React**, **Vue**, or **Angular**, which compile or render JavaScript in more structured ways.
 
-✅ Great for building complex, interactive UIs  
-❌ Requires build tools and deeper knowledge
+- Great for building complex, interactive UIs  
+- Requires build tools and deeper knowledge
 
 ## Getting Started
 
@@ -124,6 +124,38 @@ while (x < 3) {
 }
 ```
 
+### Arrays
+
+Arrays are used to store multiple values in a single variable. They are useful when you need to work with lists of data, such as names, numbers, or products.
+
+```js
+let fruits = ["Apple", "Banana", "Orange"];
+
+console.log(fruits[0]); // Apple
+console.log(fruits[1]); // Banana
+```
+
+You can add and remove items from an array:
+
+```js
+let fruits = ["Apple", "Banana"];
+
+fruits.push("Orange"); // Add item to end
+
+console.log(fruits);
+// ["Apple", "Banana", "Orange"]
+```
+
+Arrays are commonly used with loops to process multiple values.
+
+```js
+let fruits = ["Apple", "Banana", "Orange"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+```
+
 ### Functions
 
 Functions are reusable blocks of code designed to perform a specific task. They can take inputs (parameters), process them, and return a result. Functions help organize code, reduce repetition, and improve readability.
@@ -155,11 +187,67 @@ console.log(person.name); // "Alice"
 person.greet();           // Calls the method
 ```
 
+### Events
+
+Events allow JavaScript to respond to user actions such as clicks, key presses, and mouse movements.
+
+Common events include:
+
+- click
+- mouseover
+- keydown
+- submit
+
+```js
+<button id="myButton">Click Me</button>
+
+<script>
+  document.getElementById("myButton")
+    .addEventListener("click", function() {
+      alert("Button clicked!");
+    });
+</script>
+```
+
+### Working with User Input
+
+JavaScript can read data entered by users and use it within your program.
+
+HTML:
+
+```html
+<input type="text" id="username">
+<button id="greetButton">Greet</button>
+
+<p id="result"></p>
+```
+
+JavaScript:
+
+```js
+document.getElementById("greetButton")
+  .addEventListener("click", function() {
+
+    let name = document.getElementById("username").value;
+
+    document.getElementById("result").textContent =
+      "Hello, " + name + "!";
+});
+```
+
+In this example:
+
+- `.value` retrieves the text entered by the user.
+- `.textContent` updates text on the page.
+- The button click triggers the code.
+
+Reading user input is a common requirement in forms, calculators, search boxes, and many other applications.
+
 ## Practical Lab
 
 [Click here for a practical JS lab](JS_Lab.md)
 
-### DOM Manipulation Basics
+## DOM Manipulation Basics
 
 DOM (Document Object Model) The DOM is a programming interface that represents the structure of a web page. JavaScript can interact with the DOM to dynamically change content, styles, and structure—allowing developers to create interactive and responsive web experiences.
 
@@ -175,6 +263,30 @@ DOM (Document Object Model) The DOM is a programming interface that represents t
 ```
 
 [Click here for a detailed guide on working with the DOM](DOM_manipulation.md)
+
+## Debugging and Troubleshooting
+
+Writing code involves making mistakes and learning how to fix them. Debugging is the process of finding and resolving errors.
+
+One of the simplest debugging tools is console.log()
+
+```js
+let score = 50;
+
+console.log(score);
+```
+
+You can use it to check the value of variables as your code runs:
+
+```js
+let name = "Alice";
+
+console.log("Current user:", name);
+```
+
+Most browsers provide Developer Tools, which can usually be opened by pressing F12. The Console tab displays messages, warnings, and errors that can help identify problems in your code.
+
+Learning to read error messages and use console.log() effectively is one of the most valuable skills for a web developer.
 
 ### Example
 

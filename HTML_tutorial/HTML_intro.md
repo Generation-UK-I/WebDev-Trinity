@@ -177,4 +177,48 @@ Another powerful feature for adding structure to your HTML is using the `div` (d
 
 Div tags are particularly useful when used with CSS, as you'll see in the next tutorial.
 
+While `<div>` is useful for grouping content, HTML also provides semantic elements that describe the purpose of different sections of a webpage. Semantic HTML makes your code easier to read and improves accessibility.
+
+Common semantic elements include:
+
+- `<header>`: Page or section header
+- `<nav>`: Navigation links
+- `<main>`: Main content
+- `<section>`: A section of related content
+- `<footer>`: Page or section footer
+
+```html
+<header>
+  <h1>My Blog</h1>
+</header>
+
+<nav>
+  index.htmlHome</a>
+  about.htmlAbout</a>
+</nav>
+
+<main>
+  <section>
+    <h2>Latest Posts</h2>
+    <p>Welcome to my blog!</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Blog</p>
+</footer>
+```
+
+Most websites contain navigation links that help users move between pages. A common approach is to group links together inside a navigation menu.
+
+```html
+<nav>
+  <ul>
+    <li>index.htmlHome</a></li>
+    <li>about.htmlAbout</a></li>
+    <li>contact.htmlContact</a></li>
+  </ul>
+</nav>
+```
+
 [Click here for an HTML Cheat Sheet for quick reference for a range of tags](HTML_tags_cheatsheet.md)

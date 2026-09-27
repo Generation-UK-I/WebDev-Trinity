@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f1ea;
+    color: #333;
+}
+
+header {
+    background-color: #5c4033;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #3a2a20;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd27f;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+
+    border: 2px solid #c6a27e;
+    padding: 15px;
+    margin: 10px 0;
+
+    background-color: white;
+
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+button {
+    background-color: #5c4033;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a5645;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#signupMessage {
+    font-weight: bold;
+    color: green;
+}
+
+footer {
+    text-align: center;
+    background-color: #5c4033;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+}

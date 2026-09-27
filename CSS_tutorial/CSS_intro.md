@@ -198,6 +198,66 @@ button:hover {
 }
 ```
 
+### Simple CSS Transitions
+
+Transitions allow CSS changes to happen gradually rather than instantly.
+
+Without a transition, a hover effect changes immediately. With a transition, the change is animated.
+
+```css
+button {
+  background-color: steelblue;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+```
+
+You can animate many CSS properties including:
+
+- color
+- background-color
+- width
+- height
+- opacity
+
+Transitions help make websites feel smoother and more professional.
+
+## CSS Positioning
+
+The position property controls how an element is placed on the page.
+
+Common values include:
+
+- static (default)
+- relative
+- absolute
+- fixed
+
+```css
+.notice {
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+```
+
+A fixed element stays in the same place even when the page scrolls, commonly used for banners, menus, notifications, and custom page layouts:
+
+```css
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: navy;
+  color: white;
+}
+```
+
 ## Flexbox
 
 Flexbox (Flexible Box Layout) makes it easy to create layouts where elements automatically adjust their size and position, especially useful for navigation bars, cards, and responsive layouts.
@@ -278,3 +338,5 @@ By default, Flexbox items try to stay on one line. Enable wrapping with `flex-wr
   gap: 10px;
 }
 ```
+
+
