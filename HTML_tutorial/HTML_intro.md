@@ -4,7 +4,7 @@ HTML (HyperText Markup Language) is the standard language used to create webpage
 
 This guide will walk you through the basics of HTML with simple examples you can try out in any text editor and browser.
 
-### Basic HTML Page Structure
+## Basic HTML Page Structure
 
 Every HTML document starts with a basic structure. This sets up the webpage so the browser knows how to interpret and display it.
 
@@ -32,6 +32,7 @@ HTML uses six levels of headings `<h1>` to `<h6>` to define titles and subtitles
 ```
 
 ### Links
+
 Use the `<a>` tag to create hyperlinks that navigate to other pages or websites.
 
 ```html
